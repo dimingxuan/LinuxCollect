@@ -1,0 +1,21 @@
+node 和 npm 的安装
+
+node可以在这里下载
+今天是2016-7-01，官方推荐v4.4.4长期支持版
+
+下载并解压 node-v4.4.4-linux-x64.tar.xz
+tar -xJf node-v4.4.4-linux-x64.tar.xz
+移到通用的软件安装目录 /opt/
+sudo mv node-v4.4.4-linux-x64 /opt/
+
+安装 npm 和 node 命令到系统命令
+sudo ln -s /opt/node-v4.4.4-linux-x64/bin/node /usr/local/bin/node
+sudo ln -s /opt/node-v4.4.4-linux-x64/bin/npm /usr/local/bin/npm
+
+验证：
+node -v
+v4.4.4
+
+npm -v
+2.15.1
+
